@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.App__container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 20px;
+  background: rgba(245, 245, 245, 0.774);
+  border: 5px solid rgba(2, 255, 65, 0.582);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: auto;
+}
+
+.App__form button {
+  border: none;
+  background: none;
+  font-size: inherit;
+  color: #3498db;
+  transition: color 200ms;
+  padding: 0;
+}
+
+.todo-item {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  /* max-width:270px; */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+ 
+
+
+
+
+.todo-count {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input,
+span,
+label,
+textarea {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  /* display: block; */
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input {
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('./images/matrix.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.show-hide {
+  padding-top: 100px;
+}
+
+.login-form {
+  background-image: url('./images/matrix.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 20px;
+  border: 5px solid rgba(2, 255, 65, 0.582);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  max-width: auto;
+}
