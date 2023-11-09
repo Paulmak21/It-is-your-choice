@@ -41,8 +41,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
-  /* max-width:270px; */
   word-wrap: break-word;
   white-space: pre-wrap;
 }
@@ -62,7 +60,6 @@ label,
 textarea {
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
-  /* display: block; */
   margin: 10px;
   padding: 5px;
   border: none;
@@ -87,22 +84,14 @@ input {
   overflow-x: hidden;
 }
 
-body {
-  background-image: url('./images/matrix.png');
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+
 
 .show-hide {
   padding-top: 100px;
 }
 
 .login-form {
-  background-image: url('./images/matrix.png');
+  background-image: url('../images/matrix.png');
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;

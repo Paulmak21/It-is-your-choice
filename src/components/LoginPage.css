@@ -1,0 +1,30 @@
+.Login__Page {
+      background-image: url('../images/matrix.png');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+      .login-form {
+        background-image: url('../images/matrix.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 20px;
+        background: rgba(245, 245, 245, 0.774);
+        border: 5px solid rgba(2, 255, 65, 0.582);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        max-width: auto;
+      }    

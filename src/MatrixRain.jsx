@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import useInterval from '@use-it/interval';
 
-// Constants
 const VALID_CHARS = `abcdefghijklmnopqrstuvwxyz0123456789$+-*/=%"'#&_(),.;:?!\\|{}<>[]^~`;
 const STREAM_MUTATION_ODDS = 0.02;
 
@@ -44,7 +43,6 @@ const RainStream = props => {
 	const [topPadding, setTopPadding] = useState(stream.length * -50);
 	const [intervalDelay, setIntervalDelay] = useState(null);
 
-	// Initialize intervalDelay
 	useEffect(() => {
 		setTimeout(() => {
 			setIntervalDelay(getRandInRange(MIN_INTERVAL_DELAY, MAX_INTERVAL_DELAY));
@@ -56,7 +54,6 @@ const RainStream = props => {
 
 		if (!intervalDelay) return;
 
-		// If stream is off the screen, reset it after timeout
 		if (topPadding > props.height) {
 			setStream([]);
 			const newStream = getRandStream();
@@ -73,7 +70,6 @@ const RainStream = props => {
 		} else {
 			setTopPadding(topPadding + 44);
 		}
-		// setStream(stream => [...stream.slice(1, stream.length), getRandChar()]);
 		setStream(getMutatedStream);
 	}, intervalDelay);
 
@@ -96,7 +92,6 @@ const RainStream = props => {
 				<a
 					style={{
 						marginTop: -12,
-						// Reduce opacity for last chars
 						opacity: index < 6 ? 0.1 + index * 0.15 : 1,
 						color: index === stream.length - 1 ? '#fff' : undefined,
 						textShadow:
@@ -113,7 +108,7 @@ const RainStream = props => {
 
 const MatrixRain = props => {
 	const containerRef = useRef(null);
-	const [containerSize, setContainerSize] = useState(null); // ?{width, height}
+	const [containerSize, setContainerSize] = useState(null);
 
 	useEffect(() => {
 		const boundingClientRect = containerRef.current.getBoundingClientRect();
